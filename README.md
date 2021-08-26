@@ -1,3 +1,7 @@
-# react-7elges
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-7elges)
+# REACTJS TABLE Show
+<article>
+  <p>
+    For fun only .. hope you enjoy it.
+  </p>
+  by ananghd
+</article>
