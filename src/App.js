@@ -115,6 +115,27 @@ class App extends React.Component {
     ReactDOM.findDOMNode(this.refs.searchInput).focus();
   }
 
+  namedInput = ()  => {
+    this.setState({
+      text:'ananghd2'
+    })
+  }
+
+  componentWillMount()
+    {
+        console.log("componentWillMount()");
+    }
+ 
+    componentDidMount()
+    {
+        console.log("componentDidMount()");
+    }
+ 
+    changeState()
+    {
+        this.setState({ hello : "Geek!" });
+    }
+
   render() {
     return (
       <div>
@@ -146,10 +167,26 @@ class App extends React.Component {
           ref="searchInput"
         />
         <button onClick={this.clearInput}> CLEAR </button>
+        <button onClick={this.namedInput}> NAME </button>
         <h4>{this.state.text}</h4>
       </div>
     );
   }
+    shouldComponentUpdate(nextProps, nextState)
+    {
+        console.log("shouldComponentUpdate()");
+        return true;
+    }
+ 
+    componentWillUpdate()
+    {
+        console.log("componentWillUpdate()");
+    }
+ 
+    componentDidUpdate()
+    {
+        console.log("componentDidUpdate()");
+    }
 }
 
 App.defaultProps = {
